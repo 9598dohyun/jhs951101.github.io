@@ -3,9 +3,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 		<link rel="stylesheet" href="../../../../../css/styleToView.css">
-		<title>
-			A program managing cover letters using blank space layout
-		</title>
+		<title>A program checking the number of people in a cafe using Python OpenCV</title>
 	</head>
 	<body>
 		<div class="view">
@@ -19,11 +17,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									A function to Load a list of Cover Letters
+									A function to Load the Number of People in each Cafe
 								</strong>
 							</p>
 							<p>
-								You can see a list of currently saved resumes.
+								You can search the population number from a cafe near you. You can also see if they are currently open.
 							</p>
 						</td>
 					</tr>
@@ -34,11 +32,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									A function to Write Cover Letters
+									A function to Sign-In and Sign-Up
 								</strong>
 							</p>
 							<p>
-								You can write a new self-introduction letter. In this case, you can place blank spaces with '<' and '>'.
+								You can log in to the cafe-only program. If you are not yet a member, you can sign up.
 							</p>
 						</td>
 					</tr>
@@ -49,11 +47,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									A function to Deploy Cover Letters
+									A function to Count People
 								</strong>
 							</p>
 							<p>
-								By filling in the blanks in the self-introduction letter, you can distribute it in your own words.
+								If you click 'START', face recognition is performed periodically to count the population.
 							</p>
 						</td>
 					</tr>
@@ -61,37 +59,38 @@
 			</div>
 			<div class="contents">
 				<strong class="title2">Things to Contribute to Society</strong><br>
-				By arranging blank spaces in the self-introduction letter, it is very convenient to manage multiple self-introduction statements into one, and the number of mistakes made by typos is greatly reduced. In addition, it can be used not only for employment self-introduction, but also for graduate school academic plans and external activity applications.
+				Since you can see at a glance how many seats are filled in the cafes around you, you can easily decide which cafe to go to for a break and avoid wandering around as much as possible. It is estimated that it will be useful not only in cafes, but also in restaurants, banks, and community centers.
 			</div>
 			<div class="contents">
 				<strong class="title1">Background and Purpose</strong><br>
-				If each company writes and manages a self-introduction separately, it is very inconvenient because when you edit one thing, you have to edit the rest one by one. If you only apply to one place, that's fine, but getting a job is a game of odds, so no job seeker will only apply to one place.
+				I visited the cafe to take a break, but the place was already full, so I had to find another cafe. It's also cumbersome to call the cafe and ask if it's full every time. So, to solve this problem, we implemented a program to check the number of people in a cafe using Python OpenCV.
 			</div>
 			<div class="contents">
 				<strong class="title2">What I Learned</strong>
 					<ul>
-<li>I learned how to insert, modify, view and delete data after building SQLite on Android.</li>
-<li>I learned how to add sharing to Android.</li>
-<li>I learned how to use ListView on Android.</li>
-<li>I learned how to build an Android app.</li>
+						<li>I learned how to use OpenCV in Python.</li>
+						<li>I learned how to link Java programs and Python programs.</li>
+						<li>I learned how to use the asynchronous method with Multi-Thread in Java and the structure of Multi-Threading.</li>
+						<li>I learned how to implement a client with Java Swing.</li>
+						<li>I learned how to embed Google Maps in Android.</li>
+						<li>I learned how to implement a client in Android.</li>
+						<li>I learned how to build a server with Java, build a database with MySQL, and connect with JDBC.</li>
 					</ul>
 			</div>
 			<div class="contents">
 				<strong class="title1">Process</strong>
 					<ol>
-						<li>First of all, the contents of the self-introduction letter must be permanently saved, so I created the SQLite DB within the app in the ‘Android Programming’ book and executed the data storage example.</li>
-<li>The self-introduction letter should be displayed as a list by item, and each self-introduction letter should have edit, delete, and export functions. So, there should be a button for each list. Therefore, I found an example of placing a button in each ListView item on Google and executed it.</li>
-<li>I implemented a function to manage self-introduction by item by combining the examples that have been executed so far and allowing the content to be modified or deleted when a button is touched.</li>
-<li>I implemented a function to add a self-introduction by placing an ‘add’ button at the bottom of the screen. At this time, I put the angle brackets (<, >) to place a blank space.</li>
-<li>When exporting, it is necessary to fill in the blanks created when writing the self-introduction letter, so in the example of placing buttons for each ListView item, only buttons were replaced with input fields and an input field was placed for each item.</li>
-<li>However, I did not know how to extract all the contents of the input field for each ListView item. So, I found an example code in Google and implemented a function to reflect the entered information in the self-introduction.</li>
-<li>Finally, I implemented a function to export the content of the self-introduction to KakaoTalk, etc after finding a sharing example on Google.</li>
-<li>In this way, I was able to implement the program I wanted.</li>
+						<li>I made a cafe-only program based on Java Swing and a user-only program based on the Android app. At this time, I put Google Maps on the app screen.</li>
+						<li>I built a server with Java, and the database was built with MySQL and then linked with JDBC. However, there was no response when the cafe program delivered information. So, as a result of searching on Google, I made the cafe program to inherit Thread in order to exchange information with the server, but I found out that in order for a multi-thread to share a variable value right away, I need to use volatile for the variable. I was able to solve the problem by using volatile.</li>
+						<li>I linked the Python program with the Cafe program and then make the Python program count the population by face recognition, which was the most difficult.</li>
+						<li>So, I found an example of face recognition using OpenCV on Google and modified it to count the population after analyzing the source code.</li>
+						<li>And, I referred the source code to link the Python program with the cafe program after finding an example of running a Python program in a Java program on Google.</li>
+						<li>In this way, I was able to implement the program I wanted.</li>
 					</ol>
 			</div>
 			<div class="contents">
 				<strong class="title2">A thing to have Done my Best to Strengthen my Abilities</strong><br>
-				SQLite DB creation and data storage within the app, and new use of ListView
+				Implementing functions to recognize face and count population using OpenCV in Python and linking with Java Swing
 			</div>
 			<div class="contents">
 				<strong class="title1">Overall Structure</strong><br>
@@ -99,17 +98,16 @@
 			</div>
 			<div class="contents">
 				<strong class="title1">Used Skills</strong><br>
-				Android, Java, SQLite
+				Android, Google Map, Python, OpenCV, Java, TCP, MySQL, AWS
 			</div>
 			<div class="contents">
 				<strong class="title1">Development Environment</strong><br>
-				Android Studio
+				Eclipse IDE, Android Studio, Python IDLE, PHPMyAdmin
 			</div>
 			<div class="contents">
 				<strong class="title1">Further Explanations</strong>
 					<ul>
-						<li><a href="https://play.google.com/store/apps/details?id=spcompany.sharping.textmanagement" target="_blank">Release</a></li>
-						<li><a href="https://github.com/jhs951101/TextManagement" target="_blank">Code</a></li>
+						<li><a href="https://github.com/jhs951101/CafeConfirm" target="_blank">Code</a></li>
 					</ul>
 			</div>
 		</div>

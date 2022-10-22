@@ -3,10 +3,29 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 		<link rel="stylesheet" href="../../../../css/styleToView.css">
-		<title>Unityと連動可能なArduinoゲームコントローラ</title>
+		<title>BuildGreen：環境にやさしい建築認証業務支援ソリューション</title>
 	</head>
 	<body>
 		<div class="view">
+			<div class="contents">
+				<strong class="title1">結果画面</strong><br>
+				<div class="wrap-vertical">
+					<img src="results/1.png" alt="result image" >
+					<img src="results/2.png" alt="result image" >
+					<img src="results/3.png" alt="result image" >
+					<img src="results/4.png" alt="result image" >
+					<img src="results/5.png" alt="result image" >
+					<img src="results/6.png" alt="result image" >
+					<img src="results/7.png" alt="result image" >
+					<img src="results/8.png" alt="result image" >
+					<img src="results/9.png" alt="result image" >
+					<img src="results/10.png" alt="result image" >
+					<img src="results/11.png" alt="result image" >
+					<img src="results/12.png" alt="result image" >
+					<img src="results/13.png" alt="result image" >
+					<img src="results/14.png" alt="result image" >
+				</div>
+			</div>
 			<div class="contents">
 				<strong class="title1">実装機能</strong>
 				<table class="functions-table">
@@ -17,11 +36,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									ボールを操縦する機能
+									会社名による製品リストを照会する機能
 								</strong>
 							</p>
 							<p>
-								コントローラを傾けてボールを操縦できます。
+								会社名を入力したら、その会社の製品リストを照会できます。
 							</p>
 						</td>
 					</tr>
@@ -32,11 +51,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									視点を変更する機能
+									評価スコアを計算する機能
 								</strong>
 							</p>
 							<p>
-								コントローラ内のボタンを押して視点を切り替えることができます。 赤いボタンを押すと反時計回りに、青色のボタンを押すと時計回りに、ハニカムボタンを押すと元の位置に戻ります。
+								認証評価項目に基づいてスコアを模擬的に計算できます。
 							</p>
 						</td>
 					</tr>
@@ -47,11 +66,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									ボックスが消える機能
+									記材を勧める機能
 								</strong>
 							</p>
 							<p>
-								ボールがボックスに近づくと、そのボックスは消えます。
+								これまでに入力した情報をもとに記材をお勧めいたします。
 							</p>
 						</td>
 					</tr>
@@ -62,41 +81,43 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									勝負を判断する機能
+									PDFに変換する機能
 								</strong>
 							</p>
 							<p>
-								制限時間内にボックスを全て取り除くと勝ちます。
+								これまでに入力した情報を圧縮して単一のPDF文書が作れます。
 							</p>
 						</td>
 					</tr>
 				</table>
 			</div>
 			<div class="contents">
+				<strong class="title2">社会に貢献しようとしたこと</strong><br>
+				緑の建築認証手続きをできるだけ簡単にでき、平面図などの個人情報が漏洩するのを防ぐことができます。
+			</div>
+			<div class="contents">
 				<strong class="title1">背景と目的</strong><br>
-				コンピュータシステム入門 授業時間にArduinoで作品を作る課題がありました。 できるだけ創造的な作品を作るために制作することになりました。
+				「BuildGreen」会社でフリーランサーとして働いてプロジェクトに参加しました。
 			</div>
 			<div class="contents">
 				<strong class="title2">学んだこと</strong>
 					<ul>
-						<li> ArduinoとUnityプログラムの連携方法を学びました。</li>
-						<li>ボタンとチルトセンサーの活用方法を学びました。</li>
-						<li> Arduinoでハードウェアを設計して実装する方法を学びました。</li>
+						<li>WPFでページに機能を実装する方法を学びました。</li>
+						<li> MySQLiを使用してMySQLと連携する方法を学びました。</li>
+						<li>ウェブサーバーをCafe24に表示した後に連動する方法を学びました。</li>
+						<li>Flaskで構築したサーバーをAWSに表示した後、ホームページと連携する方法を学びました。</li>
+						<li>韓国環境産業技術院、韓国エネルギー工団、道路名住所APIを活用する方法を学びました。</li>
 					</ul>
 			</div>
 			<div class="contents">
 				<strong class="title1">進行手順</strong>
 					<ol>
-						<li> Arduinoプログラミングの前に、ボックスとテープを適切に活用してゲームコントローラのモデルを実装しました。</li>
-						<li>チルトセンサーと3つの大きなボタンを購入した後、ゲームコントローラーモデルに取り付けました。</li>
-						<li>AduinoとUnityを連動させる作業をしましたが、これが最も難しかったです。 だから、お互いに連動する例を長い時間の終わりにGoogleで見つけた後、シリアルポートを合わせて何とか実行するようにしました。</li>
-						<li>相互に連動する例を参考にして、Unityベースの既存の空洞ゲームをC/C++ベースのArduinoプログラムと連動するように修正しました。</li>
-						<li>このようにして目的のプログラムを実装できました。</li>
+						<li>(Coming Soon)</li>
 					</ol>
 			</div>
 			<div class="contents">
 				<strong class="title2">能力強化のために最も努力したこと</strong><br>
-				Arduinoで創造的な作品制作とUnityと連動
+				WPFで韓国環境産業技術院、韓国エネルギー工団APIを活用
 			</div>
 			<div class="contents">
 				<strong class="title1">全体構造</strong><br>
@@ -104,18 +125,16 @@
 			</div>
 			<div class="contents">
 				<strong class="title1">使用技術</strong><br>
-				Arduino, Unity
+				WPF、PHP、CSS、MySQL、Flask、Cafe24、AWS、韓国環境産業技術院API、韓国エネルギー工団API
 			</div>
 			<div class="contents">
 				<strong class="title1">開発環境</strong><br>
-				Arduino IDE, Unity
+				Visual Studio 2017, FileZilla, MySQL Workbench, Terminal
 			</div>
 			<div class="contents">
 				<strong class="title1">追加の説明</strong>
 					<ul>
-						<li>専攻科目「コンピュータグラフィックス」授業時間にした課題を改善し、専攻科目「コンピュータシステム入門」期末課題として提出しました。</li>
-						<li><a href="https://cafe.naver.com/studyonarduino/4527" target="_blank">게시글</a></li>
-						<li><a href="https://github.com/jhs951101/RollABallWithController" target="_blank">Code</a></li>
+						<li>（実際にビジネスをしているので、ソースコードを公開できないこと、ご了承ください。）</li>
 					</ul>
 			</div>
 		</div>

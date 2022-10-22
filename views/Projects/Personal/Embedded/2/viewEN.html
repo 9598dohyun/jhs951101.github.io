@@ -4,7 +4,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 		<link rel="stylesheet" href="../../../../../css/styleToView.css">
 		<title>
-			Binary Land with Cortex-M3
+			Toy Stage with Arduino
 		</title>
 	</head>
 	<body>
@@ -19,11 +19,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									A function to Move Characters
+									A function to Turn On Light on LED
 								</strong>
 							</p>
 							<p>
-								You can move your character with the joystick.
+								The LEDs near the stage and the LEDs hanging above it twinkle.
 							</p>
 						</td>
 					</tr>
@@ -34,11 +34,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									A function to Shoot objects with Laser Gun
+									A function to Detect Brightness
 								</strong>
 							</p>
 							<p>
-								You can fire the laser gun by pressing the button.
+								Light or dark determines how the LED flashes. When it's dark, the LED flashes a lot.
 							</p>
 						</td>
 					</tr>
@@ -49,26 +49,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									A function to Be Catched by Webs
+									A function to Run Motors
 								</strong>
 							</p>
 							<p>
-								If it touches the web, the character will be unable to do anything. If both characters get caught in the web, they lose.
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="functions/4.png" alt="function4 image" class="function-image">
-						</td>
-						<td class="function-contents">
-							<p>
-								<strong>
-									A function to Win a game
-								</strong>
-							</p>
-							<p>
-								If both characters eat hearts at the same time, you win.
+								When it is dark, the LED will flash and the motor will run, making it a moving LED.
 							</p>
 						</td>
 					</tr>
@@ -76,44 +61,47 @@
 			</div>
 			<div class="contents">
 				<strong class="title1">Background and Purpose</strong><br>
-				There was an assignment to create a program for Cortex-M3 in a microprocessor application design class. It was created to make the most creative work possible.
+				There was a task to make a work with Arduino in an introductory computer system class. It was created to make the most creative work possible.
 			</div>
 			<div class="contents">
 				<strong class="title2">What I Learned</strong>
 					<ul>
-						<li>I learned how to implement Cortex-M3 dedicated programs in C.</li>
+						<li>I learned how to design and implement hardware with Arduino</li>
+<li>I learned how to use LEDs, a brightness sensor, and a servo motor.</li>
+<li>I learned how to implement the polling method with Arduino and the difference between the polling method and the interrupt method.</li>
 					</ul>
 			</div>
 			<div class="contents">
 				<strong class="title1">Process</strong>
 					<ol>
-						<li>At first, I didn't know anything, so I implemented and executed simple things one by one, such as moving a character or shooting a laser gun. The interrupt method is used to operate when the button is pressed like this.</li>
-<li>I put together the implementations so far and ran it, but it didn't work.</li>
-<li>I checked the source code closely and made some modifications to make it work.</li>
+						<li>Before programming the Arduino, I implemented the stage model using boxes, tapes, and wooden chopsticks.</li>
+<li>I found each example program for LED, brightness sensor, and servo motor in the lecture material, and modified it to my liking and merged it into one.</li>
+<li>I used a polling method so that it behaves differently depending on whether the light is dark or bright.</li>
+<li>There was some trial and error, but I checked the code closely and corrected it.</li>
 <li>In this way, I was able to implement the program I wanted.</li>
 					</ol>
 			</div>
 			<div class="contents">
 				<strong class="title2">A thing to have Done my Best to Strengthen my Abilities</strong><br>
-				Implementing a program in Cortex-M3 and creating a creative game
+				Creating creative works with Arduino
 			</div>
 			<div class="contents">
 				<strong class="title1">Overall Structure</strong><br>
-				<img src="../../../structures/single.png" alt="structure image" class="structure">
+				<img src="structure.png" alt="structure image" class="structure">
 			</div>
 			<div class="contents">
 				<strong class="title1">Used Skills</strong><br>
-				C
+				Arduino
 			</div>
 			<div class="contents">
 				<strong class="title1">Development Environment</strong><br>
-				RTOS-Aware
+				Arduino IDE
 			</div>
 			<div class="contents">
 				<strong class="title1">Further Explanations</strong>
 					<ul>
-						<li>It was submitted as the final assignment of the major subject ‘Microprocessor Application Design’.</li>
-						<li><a href="https://github.com/jhs951101/BinaryLand" target="_blank">Code</a></li>
+						<li><a href="https://cafe.naver.com/studyonarduino/4394" target="_blank">Post</a></li>
+						<li><a href="https://github.com/jhs951101/MiniStage" target="_blank">Code</a></li>
 					</ul>
 			</div>
 		</div>

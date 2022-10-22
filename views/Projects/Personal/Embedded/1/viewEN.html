@@ -3,9 +3,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 		<link rel="stylesheet" href="../../../../../css/styleToView.css">
-		<title>
-			Toy Stage with Arduino
-		</title>
+		<title>Game Controller compatible with Unity using Arduino</title>
 	</head>
 	<body>
 		<div class="view">
@@ -19,11 +17,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									A function to Turn On Light on LED
+									A function to Control a Ball
 								</strong>
 							</p>
 							<p>
-								The LEDs near the stage and the LEDs hanging above it twinkle.
+								You can control the ball by tilting the controller.
 							</p>
 						</td>
 					</tr>
@@ -34,11 +32,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									A function to Detect Brightness
+									A function to Change Point of View
 								</strong>
 							</p>
 							<p>
-								Light or dark determines how the LED flashes. When it's dark, the LED flashes a lot.
+								You can switch the viewpoint by pressing a button within the controller. Press the red button to turn counterclockwise, press the blue button to turn clockwise, and press the white button to return to the original position.
 							</p>
 						</td>
 					</tr>
@@ -49,11 +47,26 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									A function to Run Motors
+									A function to Vanish Item Boxes
 								</strong>
 							</p>
 							<p>
-								When it is dark, the LED will flash and the motor will run, making it a moving LED.
+								When the ball approaches the box, the box disappears.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/4.png" alt="function4 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									A function to Decide Victory or Defeat
+								</strong>
+							</p>
+							<p>
+								You win by clearing all the boxes within the time limit.
 							</p>
 						</td>
 					</tr>
@@ -61,29 +74,29 @@
 			</div>
 			<div class="contents">
 				<strong class="title1">Background and Purpose</strong><br>
-				There was a task to make a work with Arduino in an introductory computer system class. It was created to make the most creative work possible.
+				In an introductory computer system class, there was a task to make a work with Arduino. It was created to make the most creative work possible.
 			</div>
 			<div class="contents">
 				<strong class="title2">What I Learned</strong>
 					<ul>
+						<li>I learned how to link Arduino and Unity programs.</li>
+						<li>I learned how to use buttons and tilt sensors.</li>
 						<li>I learned how to design and implement hardware with Arduino</li>
-<li>I learned how to use LEDs, a brightness sensor, and a servo motor.</li>
-<li>I learned how to implement the polling method with Arduino and the difference between the polling method and the interrupt method.</li>
 					</ul>
 			</div>
 			<div class="contents">
 				<strong class="title1">Process</strong>
 					<ol>
-						<li>Before programming the Arduino, I implemented the stage model using boxes, tapes, and wooden chopsticks.</li>
-<li>I found each example program for LED, brightness sensor, and servo motor in the lecture material, and modified it to my liking and merged it into one.</li>
-<li>I used a polling method so that it behaves differently depending on whether the light is dark or bright.</li>
-<li>There was some trial and error, but I checked the code closely and corrected it.</li>
-<li>In this way, I was able to implement the program I wanted.</li>
+						<li>I implemented a mockup of a game controller using boxes and tapes appropriately before programming the Arduino.</li>
+						<li>I bought a tilt sensor and 3 big buttons and attached them to my game controller mockup.</li>
+						<li>I worked on linking Arduino and Unity, but this was the most difficult. So, after a long time, I found an example of interworking with each other on Google, and I tried to run it somehow by matching the serial port.</li>
+						<li>I modified programs to link the existing Unity-based ball rolling game with the C/C++-based Arduino program by referring to examples that link with each other.</li>
+						<li>In this way, I was able to implement the program I wanted.</li>
 					</ol>
 			</div>
 			<div class="contents">
 				<strong class="title2">A thing to have Done my Best to Strengthen my Abilities</strong><br>
-				Creating creative works with Arduino
+				Creating creative works with Arduino and linking with Unity
 			</div>
 			<div class="contents">
 				<strong class="title1">Overall Structure</strong><br>
@@ -91,17 +104,18 @@
 			</div>
 			<div class="contents">
 				<strong class="title1">Used Skills</strong><br>
-				Arduino
+				Arduino, Unity
 			</div>
 			<div class="contents">
 				<strong class="title1">Development Environment</strong><br>
-				Arduino IDE
+				Arduino IDE, Unity
 			</div>
 			<div class="contents">
 				<strong class="title1">Further Explanations</strong>
 					<ul>
-						<li><a href="https://cafe.naver.com/studyonarduino/4394" target="_blank">Post</a></li>
-						<li><a href="https://github.com/jhs951101/MiniStage" target="_blank">Code</a></li>
+						<li>I improved the assignments I did in the ‘Computer Graphics’ class for my major and submitted it as a final assignment for my major, ‘Introduction to Computer Systems’.</li>
+						<li><a href="https://cafe.naver.com/studyonarduino/4527" target="_blank">Post</a></li>
+						<li><a href="https://github.com/jhs951101/RollABallWithController" target="_blank">Code</a></li>
 					</ul>
 			</div>
 		</div>

@@ -1,5 +1,6 @@
 body {
     color: #000000;
+    background-color: rgba(250, 250, 250, 1.0);
     font-family: 'Malgun Gothic';
     font-size: 15px;
 }
@@ -27,6 +28,14 @@ body {
 
 .explanation1 {
     font-size: 10px;
+}
+
+.wrap-vertical{
+  width: 100%;
+  padding: 10px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
 }
 
 .functions-table {

@@ -3,9 +3,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 		<link rel="stylesheet" href="../../../../../css/styleToView.css">
-		<title>
-			A program introducing Sonic using JSP and Servlet
-		</title>
+		<title>A program recommending tips using recommendation library in R</title>
 	</head>
 	<body>
 		<div class="view">
@@ -19,11 +17,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									A function to Load Sonic Characters
+									A function to Recommend Tips
 								</strong>
 							</p>
 							<p>
-								You can inquire information about Sonic characters. You can also view information about Sonic games.
+								You can receive recommendations by e-mail according to the set cycle of tips that the user will like.
 							</p>
 						</td>
 					</tr>
@@ -34,11 +32,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									A function to Sign-In and Sign-Up
+									A function to Evaluate Tips
 								</strong>
 							</p>
 							<p>
-								You can log in to the homepage. If you are not yet a member, you can sign up.
+								You can give a rating to a recommended tip or a tip searched by a search. These ratings are used as indicators to recommend another Tip.
 							</p>
 						</td>
 					</tr>
@@ -49,44 +47,65 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									A function to Send Inquiry or Proposal
+									A function to Add Tips
 								</strong>
 							</p>
 							<p>
-								You can also make personal inquiries or suggestions to the manager. This will be sent to the administrator's email.
+								If you wish, you can register your own Tip.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/4.png" alt="function4 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									A function to Search Tips
+								</strong>
+							</p>
+							<p>
+								You can access the website and search for existing tips. This search and search is also used as an indicator to recommend another tip.
 							</p>
 						</td>
 					</tr>
 				</table>
 			</div>
 			<div class="contents">
+				<strong class="title2">Things to Contribute to Society</strong><br>
+				As you get more information by getting a little tip in your daily life, you can reduce the hassle of searching for the information you need every time, and lead a more rewarding life.
+			</div>
+			<div class="contents">
 				<strong class="title1">Background and Purpose</strong><br>
-				Every company these days has a website. In order to prepare for becoming a web developer, I have implemented my own website.
+				It happens that you miss out on important benefits to yourself and regret later. Also, it is too cumbersome to search for content that is important to you every time. So, to solve this problem as much as possible, I implemented a tip recommendation program using the R recommendation library.
 			</div>
 			<div class="contents">
 				<strong class="title2">What I Learned</strong>
 					<ul>
+						<li>I learned how to implement a recommendation algorithm with recommenderlab in R, and the difference between user collaborative filtering and item-based collaborative filtering.</li>
+						<li>I learned how to link Java programs and R programs.</li>
+						<li>I learned how to send mail using SMTP as Transport in Java and the difference between SMTP, POP3 and IMAP.</li>
+						<li>I learned how to build a web server with Java and Servlet, and how to build a database with MySQL and connect with JDBC.</li>
 						<li>I learned how to send HTTP requests from a web page and the difference between GET and POST.</li>
-<li>I learned how to implement web pages with JSP, CSS, and JavaScript.</li>
-<li>I learned how to send mail using SMTP as Transport in Java and the difference between SMTP, POP3 and IMAP.</li>
-<li>I learned how to build a web server with Java and Servlet, and how to build a database with MySQL and connect with JDBC.</li>
+						<li>I learned how to implement web pages with JSP, CSS, and JavaScript.</li>
 					</ul>
 			</div>
 			<div class="contents">
 				<strong class="title1">Process</strong>
 					<ol>
-						<li>There were more unnecessary features than I thought on the existing website, so I removed them.</li>
-<li>I built a web server with Java and Servlet, and built a database with MySQL and JDBC before interworking.</li>
-<li>I modified programs so that it is submitted to the web server for member registration, login, and 1:1 inquiry, and implemented them while looking at the example code.</li>
-<li>I implemented this programs well overall. And, I tried to display 10 each when I searched for a Sonic game, but an error message appeared.</li>
-<li>I was able to implement it to come out 10 each after carefully checking the implemented code and thinking about it.</li>
-<li>I had the web server use Transport and SMTP to send the contents to the operator's e-mail for 1:1 inquiries.</li>
-<li>In this way, I was able to implement the program I wanted.</li>
+						<li>I implemented an example recommendation based on evaluation information in the book 'Recommendation system using R' and implemented it as a recommendation algorithm with recommenderlab.</li>
+						<li>I built a web page and a web server with JSP and Servlet, and built a database with MySQL and linked it with JDBC.</li>
+						<li>I had Tip search results displayed at a time.</li>
+						<li>I linked the R program with the web server and then sent the email from the web server, which was the most difficult.</li>
+						<li>So, I referred the source code to link the R program to the web server after finding an example of running an R program in a Java program on Google.</li>
+						<li>And I searched Google for an example of sending an email using Transport and SMTP in a Java program and analyzed the source code so that the email was sent from the web server.</li>
+						<li>In this way, I was able to implement the program I wanted.</li>
 					</ol>
 			</div>
 			<div class="contents">
 				<strong class="title2">A thing to have Done my Best to Strengthen my Abilities</strong><br>
-				Implementing a homepage with SP&Servlet, constructing web server, and interworking with database (MySQL)
+				Implementing recommendation function using recommendation library in R, database (MySQL) and linking with homepage
 			</div>
 			<div class="contents">
 				<strong class="title1">Overall Structure</strong><br>
@@ -94,17 +113,17 @@
 			</div>
 			<div class="contents">
 				<strong class="title1">Used Skills</strong><br>
-				JSP, CSS, JavaScript, Java, Servlet, HTTP, MySQL
+				JSP, CSS, JavaScript, Java, Servlet, HTTP, R, SMTP, MySQL
 			</div>
 			<div class="contents">
 				<strong class="title1">Development Environment</strong><br>
-				Eclipse IDE, PHPMyAdmin
+				Eclipse IDE, R Studio, PHPMyAdmin
 			</div>
 			<div class="contents">
 				<strong class="title1">Further Explanations</strong>
 					<ul>
-						<li>The existing website used Namo Web Editor and was submitted as a web design project for the liberal arts course.</li>
-						<li><a href="https://github.com/jhs951101/IntroSonic" target="_blank">Code</a></li>
+						<li>In the second semester of 2017, I submitted my thesis as a bachelor's thesis and received notification of acceptance.</li>
+						<li><a href="https://github.com/jhs951101/NotifyTips" target="_blank">Code</a></li>
 					</ul>
 			</div>
 		</div>

@@ -3,7 +3,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 		<link rel="stylesheet" href="../../../../../css/styleToView.css">
-		<title>로그인 프로그램</title>
+		<title>JSP와 Servlet을 이용한 소닉 소개 프로그램</title>
 	</head>
 	<body>
 		<div class="view">
@@ -17,11 +17,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									로그인 기능
+									소닉 캐릭터 조회 기능
 								</strong>
 							</p>
 							<p>
-								아이디와 비밀번호를 입력해서 로그인 합니다.
+								소닉 캐릭터에 대한 정보를 조회할 수 있습니다. 그리고 소닉 게임에 대한 정보도 조회할 수 있습니다.
 							</p>
 						</td>
 					</tr>
@@ -32,11 +32,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									회원가입 기능
+									로그인 및 회원가입 기능
 								</strong>
 							</p>
 							<p>
-								아이디, 비밀번호, 이름, 성별을 입력해서 회원가입 합니다.
+								홈페이지에 로그인할 수 있습니다. 아직 회원이 아니면 회원가입 할 수 있습니다.
 							</p>
 						</td>
 					</tr>
@@ -47,26 +47,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									정보 조회 기능
+									1:1 문의 or 건의 기능
 								</strong>
 							</p>
 							<p>
-								해당 회원의 이름을 보여줍니다.
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="functions/4.png" alt="function3 image" class="function-image">
-						</td>
-						<td class="function-contents">
-							<p>
-								<strong>
-									로그아웃 기능
-								</strong>
-							</p>
-							<p>
-								로그아웃 합니다.
+								관리자한테 개인적인 문의 or 건의도 가능합니다. 이 내용은 관리자의 이메일로 전송됩니다.
 							</p>
 						</td>
 					</tr>
@@ -79,21 +64,27 @@
 			<div class="contents">
 				<strong class="title2">배운 점</strong>
 					<ul>
-						<li>Cafe24에서 서버를 구축한 후 운영하는 법을 알게 되었습니다.</li>
-						<li>JSP로 클라이언트와 서버를 구현하는 법과 MariaDB로 데이터베이스를 구축해서 연동하는 법을 알게 되었습니다.</li>
+						<li>웹페이지에서 HTTP Request를 보내는 법과, GET과 POST의 차이를 알게 되었습니다.</li>
+						<li>JSP, CSS, JavaScript로 웹페이지를 구현하는 법을 알게 되었습니다.</li>
+						<li>Java에서 Transport로 SMTP를 이용해서 메일을 전송하는 법과, SMTP, POP3, IMAP의 차이를 알게 되었습니다.</li>
+						<li>Java와 Servlet으로 웹 서버를 구축하는 법과 MySQL로 데이터베이스를 구축해서 JDBC로 연동하는 법을 알게 되었습니다.</li>
 					</ul>
 			</div>
 			<div class="contents">
 				<strong class="title1">진행 절차</strong>
 					<ol>
-						<li>JSP로 클라이언트와 서버를 구현하였고, MariaDB로 데이터베이스를 구축한 다음 연동하였습니다.</li>
-						<li>Cafe24에 서버를 띄웠습니다. 그러나 서버를 실행하자 Java의 버전이 너무 높다는 에러가 발생하였습니다. 그래서 더 낮은 버전 'Java SE 8'을 설치해서 버전을 낮췄습니다. 이렇게 해서 제대로 실행되도록 하였습니다.</li>
+						<li>기존 홈페이지에 필요 없는 기능이 생각보다 많아서 제거하였습니다.</li>
+						<li>Java와 Servlet으로 웹서버를 구축하였고, MySQL과 JDBC로 데이터베이스를 구축한 후 연동하였습니다.</li>
+						<li>회원가입, 로그인, 1:1문의 시 웹서버로 submit이 되도록 수정하였고, 예제 코드를 보면서 구현하였습니다.</li>
+						<li>전체적으로 잘 구현하였으나, 소닉 게임을 조회할 때 10개씩 나오게 하려고 했으나 에러 메시지가 떴습니다.</li>
+						<li>구현한 코드를 면밀히 확인하고 고민한 끝에, 10개씩 나오도록 구현할 수 있었습니다.</li>
+						<li>1:1문의 시 웹서버에서 Transport와 SMTP를 사용해서 운영자의 이메일로 내용이 전송되도록 하였습니다.</li>
 						<li>이렇게 해서 원하는 프로그램을 구현할 수 있었습니다.</li>
 					</ol>
 			</div>
 			<div class="contents">
 				<strong class="title2">역량 강화를 위해 가장 노력한 점</strong><br>
-				AWS와 Cafe24에 서버 띄우기
+				JSP&Servlet으로 홈페이지 구현, 웹 서버 구축 및 데이터베이스(MySQL)와 연동
 			</div>
 			<div class="contents">
 				<strong class="title1">전체 구조</strong><br>
@@ -101,17 +92,17 @@
 			</div>
 			<div class="contents">
 				<strong class="title1">사용 기술</strong><br>
-				JSP, CSS, JavaScript, Java, HTTP, MariaDB, Cafe24
+				JSP, CSS, JavaScript, Java, Servlet, HTTP, MySQL
 			</div>
 			<div class="contents">
 				<strong class="title1">개발 환경</strong><br>
-				Eclipse IDE, FileZilla, HeidiSQL, PuTTY
+				Eclipse IDE, PHPMyAdmin
 			</div>
 			<div class="contents">
 				<strong class="title1">부연 설명</strong>
 					<ul>
-						<li><a href="http://spg1101.shop" target="_blank">Release</a></li>
-						<li><a href="https://github.com/jhs951101/Login2" target="_blank">Code</a></li>
+						<li>기존 홈페이지는 나모웹에디터를 사용하였고 교양 과목 웹디자인 과제로 제출하였습니다.</li>
+						<li><a href="https://github.com/jhs951101/IntroSonic" target="_blank">Code</a></li>
 					</ul>
 			</div>
 		</div>

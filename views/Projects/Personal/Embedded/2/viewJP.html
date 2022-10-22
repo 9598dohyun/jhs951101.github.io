@@ -3,7 +3,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 		<link rel="stylesheet" href="../../../../../css/styleToView.css">
-		<title>Cortex-M3を使用したバイナリランド</title>
+		<title>Arduinoを使ったおもちゃステージ</title>
 	</head>
 	<body>
 		<div class="view">
@@ -17,11 +17,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									キャラクターを動く機能
+									LEDが輝く機能
 								</strong>
 							</p>
 							<p>
-								ジョイスティックでキャラクターを移動できます。
+								ステージの近くにあるLEDと上にあるLEDがキラキラ輝きます。
 							</p>
 						</td>
 					</tr>
@@ -32,11 +32,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									レーザーを発射する機能
+									明るさを感知する機能
 								</strong>
 							</p>
 							<p>
-								ボタンを押してレーザーガンを発射できます。
+								明るいか暗いかによって、LEDが輝く方法が異なります。 暗いときはLEDがたくさん輝いています。
 							</p>
 						</td>
 					</tr>
@@ -47,26 +47,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									クモの巣にかかる機能
+									モーターを動作する機能
 								</strong>
 							</p>
 							<p>
-								クモの巣に触れると、そのキャラクターは何もできなくなります。 もし両キャラクターともクモの巣にかかると敗北します。
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="functions/4.png" alt="function4 image" class="function-image">
-						</td>
-						<td class="function-contents">
-							<p>
-								<strong>
-									勝利の機能
-								</strong>
-							</p>
-							<p>
-								2人のキャラクターが同時にハートを食べると勝ちます。
+								暗くするとLEDがきらめきながらモーターが作動するので、動くLEDになります。
 							</p>
 						</td>
 					</tr>
@@ -74,44 +59,47 @@
 			</div>
 			<div class="contents">
 				<strong class="title1">背景と目的</strong><br>
-				マイクロプロセッサ応用設計 授業時間にCortex-M3用プログラムを作成する課題がありました。 できるだけ創造的な作品を作るために制作することになりました。
+				コンピュータシステム入門 授業時間にArduinoで作品を作る課題がありました。 できるだけ創造的な作品を作るために制作することになりました。
 			</div>
 			<div class="contents">
 				<strong class="title2">学んだこと</strong>
 					<ul>
-						<li>C言語でCortex-M3専用プログラムを実装する方法を学びました。</li>
+						<li>Arduinoでハードウェアを設計して実装する方法を学びました。</li>
+						<li>LED、明るさセンサー、サーボモーターを活用する方法を学びました。</li>
+						<li>Arduinoでポーリング方式を実装する方法と、ポーリング方式と割り込み方式の違いを学びました。</li>
 					</ul>
 			</div>
 			<div class="contents">
 				<strong class="title1">進行手順</strong>
 					<ol>
-						<li>最初には何も知らずにキャラクターを動かすこと、レーザーガンを撃つことなど簡単なものを一つずつ実装して実行しました。 このようにボタンを押すと動作するのは割り込み方式を使用しました。 </li>
-						<li>これまでに実装したものを組み合わせて実行しましたが、うまくいきませんでした。</li>
-						<li>Codeを慎重に確認した後、編集した後に正しく機能することができました。</li>
+						<li>Arduinoのプログラミングを行う前に、ボックス、テープ、木の箸などを利用してステージモデルから実装しました。</li>
+						<li>LED、明るさセンサー、サーボモーターの各サンプルプログラムを講義資料で見つけ、必要に応じて修正して1つにまとめました。</li>
+						<li>ポーリング方式を使用して、明るさが暗いか明るいかによって異なる動作をします。</li>
+						<li>少し試行錯誤がありましたが、コードを綿密に確認して修正しました。</li>
 						<li>このようにして目的のプログラムを実装できました。</li>
 					</ol>
 			</div>
 			<div class="contents">
 				<strong class="title2">能力強化のために最も努力したこと</strong><br>
-				Cortex-M3専用プログラムの実装と創造的なゲーム制作
+				Arduinoで創造的な作品を制作
 			</div>
 			<div class="contents">
 				<strong class="title1">全体構造</strong><br>
-				<img src="../../../structures/single.png" alt="structure image" class="structure">
+				<img src="structure.png" alt="structure image" class="structure">
 			</div>
 			<div class="contents">
 				<strong class="title1">使用技術</strong><br>
-				C
+				Arduino
 			</div>
 			<div class="contents">
 				<strong class="title1">開発環境</strong><br>
-				RTOS-Aware
+				Arduino IDE
 			</div>
 			<div class="contents">
 				<strong class="title1">追加の説明</strong>
 					<ul>
-						<li>専攻科目「マイクロプロセッサ応用設計」最後の課題として提出しました。</li>
-						<li><a href="https://github.com/jhs951101/BinaryLand" target="_blank">Code</a></li>
+						<li><a href="https://cafe.naver.com/studyonarduino/4394" target="_blank">掲示板</a></li>
+						<li><a href="https://github.com/jhs951101/MiniStage" target="_blank">Code</a></li>
 					</ul>
 			</div>
 		</div>
