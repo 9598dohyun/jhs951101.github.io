@@ -4,7 +4,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 		<link rel="stylesheet" href="../../../../css/styleToView.css">
 		<title>
-			A peacock robot with NXT LEGO MINDSTORM
+			A toy cart with Arduino
 		</title>
 	</head>
 	<body>
@@ -19,11 +19,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									A function to Move
+									A function to Recognize Boxes
 								</strong>
 							</p>
 							<p>
-								Normally it moves forward, but if it gets close to a wall or detects a sound, it reverses and turns right.
+								When you place the box on the sensor, it recognizes the color.
 							</p>
 						</td>
 					</tr>
@@ -34,11 +34,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									A function to Detect Distance
+									A function to Print Recognized Information
 								</strong>
 							</p>
 							<p>
-								A distance sensor detects if you are getting close to a wall.
+								When the box is brought to the sensor, the recognized information is output on the screen.
 							</p>
 						</td>
 					</tr>
@@ -49,26 +49,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									A function to Detect Sound
+									A function to Control a Cart
 								</strong>
 							</p>
 							<p>
-								The sound sensor detects whether a loud sound is heard.
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="functions/4.png" alt="function4 image" class="function-image">
-						</td>
-						<td class="function-contents">
-							<p>
-								<strong>
-									A function to Shake Wings
-								</strong>
-							</p>
-							<p>
-								When turning right after reversing, it flaps while waving its wings.
+								The directional buttons on the remote control the cart.
 							</p>
 						</td>
 					</tr>
@@ -76,26 +61,26 @@
 			</div>
 			<div class="contents">
 				<strong class="title1">Background and Purpose</strong><br>
-				I had a RobotC team project in our programming class. To create creative robots to serve people, to prepare them for becoming robotic engineers, we have created our own robots.
+				In an introductory computer system class, there was a task to make a work with Arduino. It was created to make the most creative work possible.
 			</div>
 			<div class="contents">
 				<strong class="title2">What I Learned</strong>
 					<ul>
-						<li>I learned how to use a motor, a distance sensor, and a sound sensor.</li>
+						<li>I learned how to use RGB LEDs, color recognition sensors, and automotive modules.</li>
 					</ul>
 			</div>
 			<div class="contents">
 				<strong class="title1">Process</strong>
 					<ol>
-						<li>I assembled the robot based on the assembly instructions the teacher gave me.</li>
-<li>I looked at the functions of the robot and thought about which functions to add, but decided to add a function to shake its wings when it detects a sound. Therefore, I add an additional sound sensor.</li>
-<li>There was a motor control example in the print that the teacher gave me, but I modified this example to control the motor to shake the wings when it detects a sound or distance.</li>
+						<li>I only implemented a model of a toy mini cart using boxes, tape, and paints before programming the Arduino.</li>
+<li>I purchased all the parts necessary for the project, and I found an example using those parts on Google and executed it.</li>
+<li>I modified example programs appropriately investigated so far, and merged them into one.</li>
 <li>In this way, I was able to implement the program I wanted.</li>
 					</ol>
 			</div>
 			<div class="contents">
 				<strong class="title2">My Role and a Thing to have Done my Best</strong><br>
-				Being responsible for implementing a program and the working principle of a peacock in RobotC
+				Being responsible for program implementation and communication between two Unos (Arduino main body)
 			</div>
 			<div class="contents">
 				<strong class="title1">Overall Structure</strong><br>
@@ -103,16 +88,17 @@
 			</div>
 			<div class="contents">
 				<strong class="title1">Used Skills</strong><br>
-				RobotC
+				Arduino
 			</div>
 			<div class="contents">
 				<strong class="title1">Development Environment</strong><br>
-				RobotC
+				Arduino IDE
 			</div>
 			<div class="contents">
 				<strong class="title1">Further Explanations</strong>
 					<ul>
-						<li>In 2012, I submitted it to the e-digital content department project presentation of Gunpo e-Business High School and received the Excellence Award.</li>
+						<li>I submitted this program as a final assignment for the major subject 'Computer System Design'.</li>
+						<li><a href="https://github.com/jhs951101/ToyShoppingCart" target="_blank">Code</a></li>
 					</ul>
 			</div>
 		</div>

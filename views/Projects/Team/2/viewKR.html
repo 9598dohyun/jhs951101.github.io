@@ -3,7 +3,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 		<link rel="stylesheet" href="../../../../css/styleToView.css">
-		<title>NXT LEGO MINDSTORM을 이용한 공작새 로봇</title>
+		<title>Arduino를 이용한 장난감 카트</title>
 	</head>
 	<body>
 		<div class="view">
@@ -17,11 +17,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									이동 기능
+									박스 인식 기능
 								</strong>
 							</p>
 							<p>
-								평소에는 전진하지만, 벽과 가까워지거나 소리를 감지하면, 후진 후 우회전 합니다.
+								박스를 센서에 갖다 대면 색깔을 인식합니다.
 							</p>
 						</td>
 					</tr>
@@ -32,11 +32,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									거리 감지 기능
+									인식 정보 출력 기능
 								</strong>
 							</p>
 							<p>
-								거리 감지 센서로 벽과 가까워지는지 감지합니다.
+								박스를 센서에 갖다 댔을 때 인식된 정보를 화면에 출력합니다.
 							</p>
 						</td>
 					</tr>
@@ -47,26 +47,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									소리 감지 기능
+									카트 조종 기능
 								</strong>
 							</p>
 							<p>
-								소리 감지 센서로 큰 소리가 들리는지 감지합니다.
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="functions/4.png" alt="function4 image" class="function-image">
-						</td>
-						<td class="function-contents">
-							<p>
-								<strong>
-									날개 흔드는 기능
-								</strong>
-							</p>
-							<p>
-								후진 후 우회전 할 때 날개를 흔들면서 파닥입니다.
+								리모콘에 있는 방향 버튼으로 카트를 조종할 수 있습니다.
 							</p>
 						</td>
 					</tr>
@@ -74,26 +59,26 @@
 			</div>
 			<div class="contents">
 				<strong class="title1">배경과 목적</strong><br>
-				프로그래밍 수업 시간에 RobotC 팀 프로젝트가 있었습니다. 창의적인 로봇을 만들어서 사람들한테 서비스를 제공하기 위해, 로봇 공학자가 될 것에 대비하기 위해 저희들만의 로봇을 제작하게 되었습니다.
+				컴퓨터시스템입문 수업 시간에 Arduino로 작품을 만드는 과제가 있었습니다. 최대한 창의적인 작품을 만들기 위해 제작하게 되었습니다.
 			</div>
 			<div class="contents">
 				<strong class="title2">배운 점</strong>
 					<ul>
-						<li>모터, 거리 감지 센서, 소리 감지 센서를 활용하는 법을 알게 되었습니다.</li>
+						<li>RGB LED, 색깔 인식 센서, 자동차 모듈을 활용하는 법을 알게 되었습니다.</li>
 					</ul>
 			</div>
 			<div class="contents">
 				<strong class="title1">진행 절차</strong>
 					<ol>
-						<li>선생님이 준 조립 설명서를 보고 로봇을 조립했습니다.</li>
-						<li>로봇의 기능을 살펴보고 어떤 기능을 추가할지 고민하다가, 소리를 감지하면 날개를 흔드는 기능을 추가하기로 하였습니다. 따라서, 소리 감지 센서를 추가로 달았습니다.</li>
-						<li>선생님이 주신 프린트물에 모터 조종 예제가 있었는데, 이 예제를 수정해서 소리 또는 거리를 감지하면 모터를 제어해서 날개를 흔들도록 하였습니다.</li>
+						<li>Arduino 프로그래밍을 하기 전에 박스, 테이프, 물감 등을 이용해 장난감 미니 카트의 모형만 구현하였습니다.</li>
+						<li>프로젝트에 필요한 부품들을 모두 구입하였고, 해당 부품들을 사용하는 예제를 구글에서 찾아서 실행하였습니다.</li>
+						<li>지금까지 조사한 예제 프로그램을 적절히 수정해서 하나로 합쳤습니다.</li>
 						<li>이렇게 해서 원하는 프로그램을 구현할 수 있었습니다.</li>
 					</ol>
 			</div>
 			<div class="contents">
 				<strong class="title2">담당한 역할 및 가장 노력한 점</strong><br>
-				프로그램 구현 총괄 담당 및 공작새의 작동 원리를 RobotC로 구현
+				프로그램 구현 총괄 담당, Uno(Arduino 본체) 2개끼리 통신
 			</div>
 			<div class="contents">
 				<strong class="title1">전체 구조</strong><br>
@@ -101,16 +86,17 @@
 			</div>
 			<div class="contents">
 				<strong class="title1">사용 기술</strong><br>
-				RobotC
+				Arduino
 			</div>
 			<div class="contents">
 				<strong class="title1">개발 환경</strong><br>
-				RobotC
+				Arduino IDE
 			</div>
 			<div class="contents">
 				<strong class="title1">부연 설명</strong>
 					<ul>
-						<li>2012년 군포e비즈니스고등학교 e-디지털콘텐츠과 프로젝트 발표회에 출품해서 우수상을 받았습니다.</li>
+						<li>전공 과목 ’컴퓨터시스템설계’ 기말 과제로 제출하였습니다.</li>
+						<li><a href="https://github.com/jhs951101/ToyShoppingCart" target="_blank">Code</a></li>
 					</ul>
 			</div>
 		</div>
