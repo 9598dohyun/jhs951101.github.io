@@ -3,7 +3,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 		<link rel="stylesheet" href="../../../../../css/styleToView.css">
-		<title>Swiftを使用した割引した価格を計算するプログラム</title>
+		<title>ログインするプログラム</title>
 	</head>
 	<body>
 		<div class="view">
@@ -17,41 +17,41 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									割引した価格を計算する機能
+									ログインする機能
 								</strong>
 							</p>
 							<p>
-								ボタンをクリックしたら、金額と割引率で計算して割引価格を見せます。
+								IDとパスワードを入力してログインします。
 							</p>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<img src="functions/2.png" alt="function2 image" class="function-image">
+							<img src="functions/2.png" alt="function3 image" class="function-image">
 						</td>
 						<td class="function-contents">
 							<p>
 								<strong>
-									価格を入力する機能
+									情報を照会する機能
 								</strong>
 							</p>
 							<p>
-								金額（定価）を入力できます。
+								そのメンバーの名前を表示します。
 							</p>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<img src="functions/3.png" alt="function3 image" class="function-image">
+							<img src="functions/2.png" alt="function3 image" class="function-image">
 						</td>
 						<td class="function-contents">
 							<p>
 								<strong>
-									割引率を入力する機能
+									ログアウトする機能
 								</strong>
 							</p>
 							<p>
-								割引率を入力できます。
+								ログアウトします。
 							</p>
 						</td>
 					</tr>
@@ -59,48 +59,47 @@
 			</div>
 			<div class="contents">
 				<strong class="title1">背景と目的</strong><br>
-				最近の人々は、モバイルアプリの多くを使用しています。 そのため、iOSアプリの開発者になるために基礎を養うために独自のアプリを実装しました。
+				最近の人々は、モバイルアプリの多くを使用しています。 そのため、iOSの開発者になるために基礎を養うために独自のアプリを実装しました。
 			</div>
 			<div class="contents">
 				<strong class="title2">学んだこと</strong>
 					<ul>
-						<li>constraintsでレイアウトを中央に配置する方法と、オブジェクトを下部に配置する方法を学びました。</li>
-						<li>Stack Viewの使い方を学びました。</li>
-						<li>ボタンをタッチしたときにイベントを呼び出す方法を学びました。</li>
-						<li>入力欄、ラベルなど、レイアウト内のオブジェクトをSwiftで活用する方法を学びました。</li>
-						<li>レイアウトのサイズを変更し、ボタンの色を変更するなど、UIをどのように飾るかを学びました。</li>
+						<li>AWSとCafe24でサーバーを構築して運用する方法を学びました。</li>
+						<li>状況に応じて、PHPでHTTPレスポンスを送信する方法を学びました。</li>
+						<li>PHPでiOSサーバーを構築する方法とMariaDBでデータベースを構築して連携する方法を学びました。</li>
+						<li>iOSからHTTPリクエストを送信する方法と、GETとPOSTの違いを学びました。</li>
+						<li>iOSでクライアントを実装する方法を学びました。</li>
 					</ul>
 			</div>
 			<div class="contents">
 				<strong class="title1">進行手順</strong>
 					<ol>
-						<li>’iOS Tutorial (2020) How To Make Your First App’ 講義を聞きながら一つずつフォローしました。 </li>
-						<li>独自のプログラムを実装する中で、Vertical Stack Viewは任意に横長を調整できないことがわかりました。 そのため、constraintsでViewを中央に配置した後、水平方向の長さを調整しました。</li>
-						<li>レイアウト内のオブジェクトの名前を変更した後、Swiftに再接続しました。 この時、Commandキーを押してマウスでドラッグして接続しました。 そして、ボタンをクリックしたら割引価格が表示されます。</li>
-						<li>入力欄の文字色を変更したり、ボタンの色を変更したりするなど、UIを飾りました。 そして、アプリの名前とアイコンを変更しました。</li>
+						<li>iOSでクライアントを実装しました。 この時点で、HTTPリクエストを送信させました。</li>
+						<li> PHPでサーバーを構築し、MariaDBでデータベースを構築してから連携しました。</li>
+						<li> AWSとCafe24にサーバーを立ち上げました。 しかし、AWSに立ち寄ると、データベースへのアクセスでさえ達成されないエラーが発生しました。 そのため、MariaDBユーザーを新しく作成した後、このユーザーにすべての権限を付与し、サーバーで使用しました。 これにより、データベースにアクセスできるようになりました。</li>
 						<li>このようにして目的のプログラムを実装できました。</li>
 					</ol>
 			</div>
 			<div class="contents">
 				<strong class="title2">能力強化のために最も努力したこと</strong><br>
-				constraintsでレイアウトの中央に配置とサイズを変更
+				iOSでHTTP Requestを送信し、AWSとCafe24にサーバーを起動する
 			</div>
 			<div class="contents">
 				<strong class="title1">全体構造</strong><br>
-				<img src="../../../structures/single.png" alt="structure image" class="structure">
+				<img src="structure.png" alt="structure image" class="structure">
 			</div>
 			<div class="contents">
 				<strong class="title1">使用技術</strong><br>
-				iOS, Swift
+				iOS, Swift, PHP, AWS, Cafe24
 			</div>
 			<div class="contents">
 				<strong class="title1">開発環境</strong><br>
-				Xcode 13.2.1
+				Xcode 14.2, Terminal in Mac, FileZilla, HeidiSQL, PuTTY
 			</div>
 			<div class="contents">
 				<strong class="title1">追加の説明</strong>
 					<ul>
-						<li><a href="https://github.com/jhs951101/DiscountedPrice1" target="_blank">Code</a></li>
+						<li><a href="https://github.com/jhs951101/ex-Login6" target="_blank">Code</a></li>
 					</ul>
 			</div>
 		</div>
