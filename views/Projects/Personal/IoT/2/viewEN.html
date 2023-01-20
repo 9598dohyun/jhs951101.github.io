@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="../../../../../css/styleToView.css">
+		<title>LED controller using RaspberryPi and Electron</title>
+	</head>
+	<body>
+		<div class="view">
+			<div class="contents">
+				<strong class="title1">Implemented Functions</strong>
+				<table class="functions-table">
+					<tr>
+						<td>
+							<img src="functions/1.png" alt="function1 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									A function to Turn ON/OFF LED
+								</strong>
+							</p>
+							<p>
+								It gets LED information from a server and turns on only one LED.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="functions/2.png" alt="function2 image" class="function-image">
+						</td>
+						<td class="function-contents">
+							<p>
+								<strong>
+									A function to Change Color of LED
+								</strong>
+							</p>
+							<p>
+								You can change a LED color in a hybrid desktop app.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="contents">
+				<strong class="title1">Results Screens</strong><br>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/m52aNeP7nHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+			<div class="contents">
+				<strong class="title1">Background and Purpose</strong><br>
+				One of the hottest things these days is IoT. Therefore, I did my own project to develop basic knowledge in preparation for becoming an embedded developer.
+			</div>
+			<div class="contents">
+				<strong class="title2">What I Learned</strong>
+					<ul>
+						<li>I learned how to send HTTP Request from RaspberryPi and Electron, and the difference between GET and POST.</li>
+						<li>I learned how to use LED after installing it on RaspberryPi.</li>
+						<li>I learned how to implement a client with Electron</li>
+						<li>I learned how to operate a server after building it on AWS and Cafe24.</li>
+						<li>I learned how to send HTTP Response in PHP according to the situation.</li>
+						<li>I learned how to build a server with PHP and how to build and connect a database with MariaDB.</li>
+					</ul>
+			</div>
+			<div class="contents">
+				<strong class="title1">Process</strong>
+					<ol>
+						<li>I implemented the client with Electron. At this time, HTTP Request is sent.</li>
+						<li>I built a server with PHP, built a database with MariaDB, and connected it.</li>
+						<li>I started a server on AWS and Cafe24. However, when launching to AWS, an error occurred that even accessing the database was not possible. So, after creating a new MariaDB user, I gave this user full privileges and used it on the server. This allows access to the database.</li>
+						<li>In this way, I was able to implement the program I wanted.</li>
+					</ol>
+			</div>
+			<div class="contents">
+				<strong class="title2">A thing to have Done my Best to Strengthen my Abilities</strong><br>
+				Sending HTTP Request from RaspberryPi and Electron and Using after installing LED
+			</div>
+			<div class="contents">
+				<strong class="title1">Overall Structure</strong><br>
+				<img src="structure.png" alt="structure image" class="structure">
+			</div>
+			<div class="contents">
+				<strong class="title1">Used Skills</strong><br>
+				RaspberryPi, Electron, PHP, AWS, Cafe24
+			</div>
+			<div class="contents">
+				<strong class="title1">Development Environment</strong><br>
+				Thonny, Visual Studio Code, FileZilla, TablePlus
+			</div>
+			<div class="contents">
+				<strong class="title1">Further Explanations</strong>
+					<ul>
+						<li><a href="https://github.com/jhs951101/LEDController_RaspberryPi" target="_blank">RaspberryPi Code</a></li>
+						<li><a href="https://github.com/jhs951101/LEDController_DesktopApp" target="_blank">Electron Code</a></li>
+					</ul>
+			</div>
+		</div>
+	</body>
+</html>
