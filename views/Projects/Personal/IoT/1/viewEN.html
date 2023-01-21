@@ -3,7 +3,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 		<link rel="stylesheet" href="../../../../../css/styleToView.css">
-		<title>Game Controller compatible with Unity using Arduino</title>
+		<title>LED controller using RaspberryPi and Electron</title>
 	</head>
 	<body>
 		<div class="view">
@@ -17,11 +17,11 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									A function to Control a Ball
+									A function to Turn ON/OFF LED
 								</strong>
 							</p>
 							<p>
-								You can control the ball by tilting the controller.
+								It gets LED information from a server and turns on only one LED.
 							</p>
 						</td>
 					</tr>
@@ -32,90 +32,69 @@
 						<td class="function-contents">
 							<p>
 								<strong>
-									A function to Change Point of View
+									A function to Change Color of LED
 								</strong>
 							</p>
 							<p>
-								You can switch the viewpoint by pressing a button within the controller. Press the red button to turn counterclockwise, press the blue button to turn clockwise, and press the white button to return to the original position.
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="functions/3.png" alt="function3 image" class="function-image">
-						</td>
-						<td class="function-contents">
-							<p>
-								<strong>
-									A function to Vanish Item Boxes
-								</strong>
-							</p>
-							<p>
-								When the ball approaches the box, the box disappears.
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="functions/4.png" alt="function4 image" class="function-image">
-						</td>
-						<td class="function-contents">
-							<p>
-								<strong>
-									A function to Decide Victory or Defeat
-								</strong>
-							</p>
-							<p>
-								You win by clearing all the boxes within the time limit.
+								You can change a LED color in a hybrid desktop app.
 							</p>
 						</td>
 					</tr>
 				</table>
 			</div>
 			<div class="contents">
+				<strong class="title1">Results Screens</strong><br>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/m52aNeP7nHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+			<div class="contents">
 				<strong class="title1">Background and Purpose</strong><br>
-				In an introductory computer system class, there was a task to make a work with Arduino. It was created to make the most creative work possible.
+				One of the hottest things these days is IoT. Therefore, I did my own project to develop basic knowledge in preparation for becoming an embedded developer.
 			</div>
 			<div class="contents">
 				<strong class="title2">What I Learned</strong>
 					<ul>
-						<li>I learned how to link Arduino and Unity programs.</li>
-						<li>I learned how to use buttons and tilt sensors.</li>
-						<li>I learned how to design and implement hardware with Arduino</li>
+						<li>I learned how to send HTTP Request from RaspberryPi and Electron, and the difference between GET and POST.</li>
+						<li>I learned how to use LED after installing it on RaspberryPi.</li>
+						<li>I learned how to implement a client with Electron</li>
+						<li>I learned how to operate a server after building it on AWS and Cafe24.</li>
+						<li>I learned how to send HTTP Response in PHP according to the situation.</li>
+						<li>I learned how to build a server with PHP and how to build and connect a database with MariaDB.</li>
 					</ul>
 			</div>
 			<div class="contents">
 				<strong class="title1">Process</strong>
 					<ol>
-						<li>I implemented a mockup of a game controller using boxes and tapes appropriately before programming the Arduino.</li>
-						<li>I bought a tilt sensor and 3 big buttons and attached them to my game controller mockup.</li>
-						<li>I worked on linking Arduino and Unity, but this was the most difficult. So, after a long time, I found an example of interworking with each other on Google, and I tried to run it somehow by matching the serial port.</li>
-						<li>I modified programs to link the existing Unity-based ball rolling game with the C/C++-based Arduino program by referring to examples that link with each other.</li>
+						<li>I implemented the client with Electron. At this time, HTTP Request is sent.</li>
+						<li>I built a server with PHP, built a database with MariaDB, and connected it.</li>
+						<li>I started a server on AWS and Cafe24. However, when launching to AWS, an error occurred that even accessing the database was not possible. So, after creating a new MariaDB user, I gave this user full privileges and used it on the server. This allows access to the database.</li>
 						<li>In this way, I was able to implement the program I wanted.</li>
 					</ol>
 			</div>
 			<div class="contents">
 				<strong class="title2">A thing to have Done my Best to Strengthen my Abilities</strong><br>
-				Creating creative works with Arduino and linking with Unity
+				Sending HTTP Request from RaspberryPi and Electron and Using after installing LED
 			</div>
 			<div class="contents">
 				<strong class="title1">Overall Structure</strong><br>
 				<img src="structure.png" alt="structure image" class="structure">
 			</div>
 			<div class="contents">
+				<strong class="title1">Circuit Diagram</strong><br>
+				<img src="circuit.png" alt="circuit image" class="structure">
+			</div>
+			<div class="contents">
 				<strong class="title1">Used Skills</strong><br>
-				Arduino, Unity
+				RaspberryPi, Electron, PHP, AWS, Cafe24
 			</div>
 			<div class="contents">
 				<strong class="title1">Development Environment</strong><br>
-				Arduino IDE, Unity
+				Thonny, Visual Studio Code, FileZilla, TablePlus
 			</div>
 			<div class="contents">
 				<strong class="title1">Further Explanations</strong>
 					<ul>
-						<li>I improved the assignments I did in the ‘Computer Graphics’ class for my major and submitted it as a final assignment for my major, ‘Introduction to Computer Systems’.</li>
-						<li><a href="https://cafe.naver.com/studyonarduino/4527" target="_blank">Post</a></li>
-						<li><a href="https://github.com/jhs951101/RollABallWithController" target="_blank">Code</a></li>
+						<li><a href="https://github.com/jhs951101/LEDController_RaspberryPi" target="_blank">RaspberryPi Code</a></li>
+						<li><a href="https://github.com/jhs951101/LEDController_DesktopApp" target="_blank">Electron Code</a></li>
 					</ul>
 			</div>
 		</div>
