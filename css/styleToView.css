@@ -63,9 +63,9 @@ body {
 }
 
 .language-button {
-	width: '100%';
-	margin: 10px;
-	padding: 10px;
+	margin: 5px;
+	padding: 5px;
+    font-size: 12px;
 	background: #DDDDDD;
 	cursor: pointer;
 	color: black;
